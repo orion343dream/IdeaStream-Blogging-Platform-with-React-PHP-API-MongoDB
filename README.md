@@ -1,4 +1,5 @@
-````markdown
+
+```markdown
 # 📝 StorySphere  
 *A modern blogging platform built with React (frontend), PHP REST API (backend), and MongoDB (database).*  
 
@@ -25,49 +26,42 @@ It’s built with a **decoupled architecture**:
 ---
 
 ## 🏗️ Architecture
-```mermaid
-flowchart LR
-    A[React Frontend] -->|Axios/Fetch API Calls| B[PHP REST API]
-    B -->|MongoDB Driver| C[(MongoDB Database)]
-    A -->|JWT Token| B
-````
+
+![Architecture Diagram](https://user-images.githubusercontent.com/your-username/architecture-diagram.png)  
+> Replace this link with the actual SVG/PNG exported from [Mermaid Live Editor](https://mermaid.live/).
 
 ---
 
 ## ✨ Features
 
-* 🔑 **Authentication & Authorization**
+### 🔑 Authentication & Authorization
+- JWT-based login and registration  
+- Role-based access (User/Admin)  
 
-  * JWT-based login and registration
-  * Role-based access (User/Admin)
+### 📰 Blogging System
+- Create, edit, delete posts  
+- Draft vs Approved posts (admin moderation)  
+- Categories & tags support  
 
-* 📰 **Blogging System**
+### 💬 Comments System
+- Users can comment on posts  
+- Admins can remove inappropriate comments  
 
-  * Create, edit, delete posts
-  * Draft vs Approved posts (admin moderation)
-  * Categories & tags support
+### ⚙️ Admin Panel
+- Approve/reject posts  
+- Manage users and content  
 
-* 💬 **Comments System**
-
-  * Users can comment on posts
-  * Admins can remove inappropriate comments
-
-* ⚙️ **Admin Panel**
-
-  * Approve/reject posts
-  * Manage users and content
-
-* 🎨 **Frontend Features**
-
-  * React Router for navigation
-  * Responsive design with Tailwind/Bootstrap
-  * Protected routes for authenticated users
+### 🎨 Frontend Features
+- React Router for navigation  
+- Responsive design with Tailwind/Bootstrap  
+- Protected routes for authenticated users  
 
 ---
 
 ## 📂 Project Structure
 
 ```
+
 StorySphere/
 │
 ├── backend/              # PHP REST API
@@ -87,15 +81,16 @@ StorySphere/
 │   └── package.json
 │
 └── README.md
-```
+
+````
 
 ---
 
 ## ⚡ Tech Stack
 
-* **Frontend**: React, React Router, Axios, TailwindCSS/Bootstrap
-* **Backend**: PHP 8+, Composer, Firebase JWT library, MongoDB PHP driver
-* **Database**: MongoDB (Atlas or local)
+- **Frontend**: React, React Router, Axios, TailwindCSS/Bootstrap  
+- **Backend**: PHP 8+, Composer, Firebase JWT library, MongoDB PHP driver  
+- **Database**: MongoDB (Atlas or local)  
 
 ---
 
@@ -104,9 +99,9 @@ StorySphere/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/storysphere.git
-cd storysphere
-```
+git clone https://github.com/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB.git
+cd IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB
+````
 
 ### 2️⃣ Backend Setup (PHP API)
 
@@ -117,16 +112,17 @@ composer install
 
 * Copy `.env.example` → `.env` and configure:
 
-  ```env
-  MONGO_URI=mongodb://localhost:27017
-  DB_NAME=storysphere
-  JWT_SECRET=your_secret_key
-  ```
+```env
+MONGO_URI=mongodb://localhost:27017
+DB_NAME=storysphere
+JWT_SECRET=your_secret_key
+```
+
 * Start PHP server:
 
-  ```bash
-  php -S localhost:8000 -t backend
-  ```
+```bash
+php -S localhost:8000 -t backend
+```
 
 ### 3️⃣ Frontend Setup (React)
 
@@ -140,7 +136,7 @@ npm start
 
 ### 4️⃣ Connect
 
-Frontend will call backend APIs (`http://localhost:8000/api/...`).
+Frontend will call backend APIs at `http://localhost:8000/api/...`.
 
 ---
 
@@ -199,4 +195,4 @@ This project is licensed under the **MIT License**.
 * [MongoDB](https://www.mongodb.com/)
 * [JWT Auth](https://github.com/firebase/php-jwt)
 
----
+````
