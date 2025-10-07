@@ -18,18 +18,22 @@ import {
       return (
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
           <Router>
-            <Layout>
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/post/:id" element={<PostPage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/register" element={<RegisterPage />} />
-                <Route path="/dashboard" element={<DashboardPage />} />
-                <Route path="/dashboard/create" element={<CreatePostPage />} />
-                <Route path="/dashboard/edit/:id" element={<EditPostPage />} />
-                <Route path="/admin" element={<AdminPage />} />
-              </Routes>
-            </Layout>
+            <Routes>
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<RegisterPage />} />
+              <Route path="/*" element={
+                <Layout>
+                  <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/post/:id" element={<PostPage />} />
+                    <Route path="/dashboard" element={<DashboardPage />} />
+                    <Route path="/dashboard/create" element={<CreatePostPage />} />
+                    <Route path="/dashboard/edit/:id" element={<EditPostPage />} />
+                    <Route path="/admin" element={<AdminPage />} />
+                  </Routes>
+                </Layout>
+              } />
+            </Routes>
           </Router>
         </ThemeProvider>
       );

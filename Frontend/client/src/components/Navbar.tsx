@@ -1,21 +1,41 @@
-import { Link } from 'react-router-dom';
-    import { Button } from '@/components/ui/button';
-    import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-    import { Menu, PenSquare, Sun, Moon } from 'lucide-react';
-    import { useTheme } from '@/components/theme-provider';
+import { Link, useNavigate } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu, PenSquare, Sun, Moon, LogOut, Plus } from 'lucide-react';
+import { useTheme } from '@/components/theme-provider';
+import { useEffect, useState } from 'react';
 
-    const Navbar = () => {
-      const { theme, setTheme } = useTheme();
+const Navbar = () => {
+  const { theme, setTheme } = useTheme();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState<any>(null);
+  const navigate = useNavigate();
 
-      // A mock auth status. Replace with real auth context later.
-      const isAuthenticated = false;
-      const isAdmin = false;
+  useEffect(() => {
+    // Check if user is logged in
+    const token = localStorage.getItem('token');
+    const userData = localStorage.getItem('user');
+    if (token && userData) {
+      setIsAuthenticated(true);
+      setUser(JSON.parse(userData));
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    setIsAuthenticated(false);
+    setUser(null);
+    navigate('/');
+  };
+
+  const isAdmin = user?.email === 'admin@ideastream.com'; // Simple admin check
 
       const navLinks = [
         { to: '/', label: 'Home' },
-        isAuthenticated && { to: '/dashboard', label: 'Dashboard' },
-        isAdmin && { to: '/admin', label: 'Admin' },
-      ].filter(Boolean);
+        ...(isAuthenticated ? [{ to: '/create-post', label: 'Create Post' }] : []),
+        ...(isAdmin ? [{ to: '/admin', label: 'Admin' }] : []),
+      ];
 
       return (
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -81,13 +101,37 @@ import { Link } from 'react-router-dom';
                 <span className="sr-only">Toggle theme</span>
               </Button>
               {isAuthenticated ? (
-                <Button variant="outline">Logout</Button>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium hidden sm:inline-block">
+                    Welcome, {user?.username}
+                  </span>
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="sm"
+                    className="hidden sm:flex"
+                  >
+                    <Link to="/create-post">
+                      <Plus className="h-4 w-4 mr-2" />
+                      New Post
+                    </Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleLogout}
+                    className="flex items-center gap-2"
+                  >
+                    <LogOut className="h-4 w-4" />
+                    Logout
+                  </Button>
+                </div>
               ) : (
                 <>
-                  <Button asChild variant="ghost">
+                  <Button asChild variant="ghost" size="sm">
                     <Link to="/login">Login</Link>
                   </Button>
-                  <Button asChild>
+                  <Button asChild size="sm">
                     <Link to="/register">Sign Up</Link>
                   </Button>
                 </>
