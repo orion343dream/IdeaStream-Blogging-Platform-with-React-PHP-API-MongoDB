@@ -1,5 +1,5 @@
 
----<!-- Badges at the very top -->
+<!-- Badges at the very top -->
 ![GitHub repo size](https://img.shields.io/github/repo-size/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?color=blue)
 ![GitHub stars](https://img.shields.io/github/stars/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?style=social)
