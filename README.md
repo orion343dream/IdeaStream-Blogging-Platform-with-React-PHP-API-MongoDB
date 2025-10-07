@@ -1,5 +1,3 @@
----
-
 ````markdown
 # 📝 StorySphere  
 *A modern blogging platform built with React (frontend), PHP REST API (backend), and MongoDB (database).*  
