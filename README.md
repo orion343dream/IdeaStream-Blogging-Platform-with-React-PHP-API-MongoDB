@@ -2,8 +2,8 @@
 # 📝 StorySphere  
 *A modern blogging platform built with React (frontend), PHP REST API (backend), and MongoDB (database).*  
 
-![GitHub repo size](https://img.shields.io/github/repo-size/orion343dream/storysphere?color=blue)
-![GitHub stars](https://img.shields.io/github/stars/orion343dream/storysphere?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?color=blue)
+![GitHub stars](https://img.shields.io/github/stars/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?style=social)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
