@@ -59,10 +59,7 @@ It’s built with a **decoupled architecture**:
 
 ---
 
-## 📂 Project Structure
-
-```
-
+📂 Project Structure
 StorySphere/
 │
 ├── backend/              # PHP REST API
@@ -82,8 +79,6 @@ StorySphere/
 │   └── package.json
 │
 └── README.md
-
-````
 
 ---
 
