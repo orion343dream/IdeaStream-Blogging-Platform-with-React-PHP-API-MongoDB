@@ -61,9 +61,15 @@ It’s built with a **decoupled architecture**:
 - Responsive design with Tailwind/Bootstrap  
 - Protected routes for authenticated users  
 
-📂 Project Structure
+*   Responsive design with Tailwind/Bootstrap
+*   Protected routes for authenticated users
 
-StorySphere/
+---
+
+📂 Project Structure
+--------------------
+
+`StorySphere/
 │
 ├── backend/              # PHP REST API
 │   ├── config/           # DB connection, JWT config
@@ -81,7 +87,16 @@ StorySphere/
 │   │   └── App.js
 │   └── package.json
 │
-└── README.md
+└── README.md`
+  
+---
+
+⚡ Tech Stack
+------------
+
+*   **Frontend**: React, React Router, Axios, TailwindCSS/Bootstrap
+*   **Backend**: PHP 8+, Composer, Firebase JWT library, MongoDB PHP driver
+*   **Database**: MongoDB (Atlas or local)
 
 ## ⚡ Tech Stack
 
