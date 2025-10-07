@@ -62,6 +62,7 @@ It’s built with a **decoupled architecture**:
 - Protected routes for authenticated users  
 
 ---
+Protected routes for authenticated users
 
 📂 Project Structure
 StorySphere/
@@ -84,8 +85,7 @@ StorySphere/
 │
 └── README.md
 
----
-
+⚡ Tech Stack
 ## ⚡ Tech Stack
 
 - **Frontend**: React, React Router, Axios, TailwindCSS/Bootstrap  
