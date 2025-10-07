@@ -1,19 +1,19 @@
 <!-- Badges at the very top -->
 ![GitHub repo size](https://img.shields.io/github/repo-size/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?color=blue)
 ![GitHub stars](https://img.shields.io/github/stars/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?style=social)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+![GitHub forks](https://img.shields.io/github/forks/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?style=social)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![PHP](https://img.shields.io/badge/PHP-8.1-blue.svg?logo=php)
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![MongoDB](https://img.shields.io/badge/MongoDB-5.0-green?logo=mongodb)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-blue?logo=tailwindcss)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple?logo=bootstrap)
+![JWT](https://img.shields.io/badge/JWT-Secure-red?logo=JSONWebTokens)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
-```markdown
-# 📝 StorySphere  
-*A modern blogging platform built with React (frontend), PHP REST API (backend), and MongoDB (database).*  
+# 📝 StorySphere
+*A modern blogging platform built with React (frontend), PHP REST API (backend), and MongoDB (database).*
 
-![GitHub repo size](https://img.shields.io/github/repo-size/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?color=blue)
-![GitHub stars](https://img.shields.io/github/stars/orion343dream/IdeaStream-Blogging-Platform-with-React-PHP-API-MongoDB?style=social)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
----
 
 ## 📌 Overview
 **StorySphere** is a full-stack blogging platform where users can:  
