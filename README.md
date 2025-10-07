@@ -61,10 +61,8 @@ It’s built with a **decoupled architecture**:
 - Responsive design with Tailwind/Bootstrap  
 - Protected routes for authenticated users  
 
----
-Protected routes for authenticated users
-
 📂 Project Structure
+
 StorySphere/
 │
 ├── backend/              # PHP REST API
@@ -85,7 +83,6 @@ StorySphere/
 │
 └── README.md
 
-⚡ Tech Stack
 ## ⚡ Tech Stack
 
 - **Frontend**: React, React Router, Axios, TailwindCSS/Bootstrap  
