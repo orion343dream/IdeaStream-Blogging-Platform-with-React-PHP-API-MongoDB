@@ -1,3 +1,5 @@
+---
+
 ````markdown
 # 📝 StorySphere  
 *A modern blogging platform built with React (frontend), PHP REST API (backend), and MongoDB (database).*  
@@ -198,3 +200,5 @@ This project is licensed under the **MIT License**.
 * [PHP](https://www.php.net/)
 * [MongoDB](https://www.mongodb.com/)
 * [JWT Auth](https://github.com/firebase/php-jwt)
+
+---
