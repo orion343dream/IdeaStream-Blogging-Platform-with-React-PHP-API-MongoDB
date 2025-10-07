@@ -1,0 +1,17 @@
+{
+      "name": "ideastream",
+      "private": true,
+      "version": "0.0.0",
+      "scripts": {
+            "dev": "concurrently \"npm run dev -w api\" \"npm run dev -w client\"",
+            "build": "npm run build -w client"
+      },
+      "devDependencies": {
+            "@types/react": "^18.3.26",
+            "concurrently": "^8.2.2"
+      },
+      "workspaces": [
+            "client",
+            "api"
+      ]
+}

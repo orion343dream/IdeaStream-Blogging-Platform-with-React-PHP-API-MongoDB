@@ -1,0 +1,13 @@
+{
+    "name": "ideastream/backend",
+    "description": "PHP backend for IdeaStream",
+    "type": "project",
+    "require": {
+        "mongodb/mongodb": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "IdeaStream\\Backend\\": "src/"
+        }
+    }
+}
